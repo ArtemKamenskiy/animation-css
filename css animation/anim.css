@@ -1,0 +1,44 @@
+body{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.iphone{
+	width: 216px;
+	height: 740px;
+	background-image: url(images/phone.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	transform: rotate(-50deg) scale(1) skew(20deg);	
+}
+.images img{
+	position: absolute;
+	padding: 15px;
+	transition: 1s;
+}
+img{
+	margin-top: 37px;
+}
+.images:hover img:nth-child(4){
+	transform: translate(150px, -150px);
+	opacity: 1;
+}
+.images:hover img:nth-child(3){
+	transform: translate(100px, -100px);
+	opacity: 0.8;
+}
+.images:hover img:nth-child(2){
+	transform: translate(50px, -50px);
+	opacity: 0.6;
+}
+.images:hover img:nth-child(1){
+	transform: translate(0px, -0px);
+	opacity: 0.4;
+}
+
+
+
